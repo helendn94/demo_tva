@@ -6,10 +6,12 @@
     <title>Triva Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="js/owl.carousel.css" />
-    <link rel="stylesheet" href="js/owl.theme.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
 </head>
+
 
 <body>
     <div id="wrapper">
@@ -36,12 +38,23 @@
         </div>
         <div id="container-app">
             <div class="container-slider" id="owl-events">
-                <div class="inner-wrapper">
-                    <div class="slide" style="background: #E54B4B;">1</div>
-                    <div class="slide" style="background: #61BFAD;">2</div>
-                    <div class="slide" style="background: #F0CF61;">3</div>
-                    <div class="slide" style="background: #0E38B1;">4</div>
-                    <div class="slide" style="background: #C6D7C7;">5</div>
+                <div class="owl-carousel owl-theme">
+                    <img src="./image/display1.png" />
+                    <img src="./image/display2.png" />
+                    <img src="./image/display3.png" />
+                    <img src="./image/display4.png" />
+                    <img src="./image/display1.png" />
+                    <img src="./image/display2.png" />
+                    <img src="./image/display3.png" />
+                    <img src="./image/display4.png" />
+                </div>
+                <div class="controller_next">
+                    <span class="next">
+                        <img src="image/leftbutton.png" /> </span>
+                </div>
+                <div class="controller_prev">
+                    <span class="prev">
+                        <img src="image/rightbutton.png" /> </span>
                 </div>
             </div>
             <hr class="container-hr" />
@@ -70,41 +83,104 @@
             <div class="container-faq">
                 <div id="wrapper_main">
                     <h1 class="text">FQA</h1>
-                    <div class="question-user">
-                        <div class="question">
+                    <div class="question">
+                        <button class="accordion">Tôi có thể chơi game này bằng cách nào?</button>
+                        <div class="accordion-content">
+                            <p>Bạn có thể chơi Trivia Play ngay lập tức bằng cách nhấn vào biểu tượng Trò chơi trên ứng dụng Messenger của Facebook. Biểu tượng trông giống như bộ điều khiển trò chơi và nằm gần khung nhập tin nhắn. Một danh sách các trò chơi sẽ hiện ra, bạn chỉ cần chọn Trivia Play và bắt đầu chơi! 
+                                    Trivia Play hiện đã có sẵn trên Facebook và ứng dụng Messenger cho iOS và Android. Ngoài ra, bạn còn có thể chơi game thông qua Messenger.com trên trình duyệt máy tính.
+                                    Hoặc đơn giản hơn, chơi game ngay bằng cách click vào nút bên dưới.</p>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button class="accordion">accordion #1</button>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button class="accordion">accordion #1</button>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="question-user">
+                        <div class="question" id="ques1">
                             <div class="ques">Tôi có thể chơi game này bằng cách nào?</div>
                             <div class="btn-anwser">
                                 <img src="./image/more_button.png" />
                             </div>
                         </div>
-                        <div class="awnser">
+                        <div class="awnser" id="aws1">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                    <div class="question-user">
+                    <div class="question-user" id="ques2">
                         <div class="question">
                             <div class="ques">Làm cách nào để mời bạn bè chơi cùng tôi?</div>
                             <div class="btn-anwser">
                                 <img src="./image/more_button.png" />
                             </div>
                         </div>
-                        <div class="awnser">
+                        <div class="awnser" id="aws2">
                             <p>Bạn có thể mời bạn bè cùng chơi Trivia Play thông qua group chat trên Facebook Messenger. Một
                                 khi bạn đã có group chat, chỉ cần nhấn vào biểu tượng game và nhấn chọn Trivia Play. Hoặc
                                 đơn giản hơn, bạn có thể nhấn vào biểu tượng mời bạn bè, một danh sách group chat và friend
                                 sẽ xuất hiện, bạn chỉ việc chọn group hay người bạn mà mình muốn chơi cùng.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-        <div id="foolter"></div>
+        <div id="footer">
+            <div class="wrapper-footer">
+                <div class="footer-info">
+                    <h1>STAY INFOMED</h1>
+                    <p>GET THE LATEST NEWS ON TRIVIA PLAY!</p>
+                    <div class="img_socia">
+                        <img src="./image/fb.png" />
+                        <img src="./image/tw.png" />
+                        <img src="./image/instant.png" />
+                    </div>
+                </div>
+                <div class="footer-ticat">
+                    <img src="image/ticat.png" />
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <script type="text/javascript" src="js/jquery-1.11.1.min.js" />
-    <script type="text/javascript" src="js/carousel.js" />
+
 </body>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/slick.js"></script>
+<script src="./js/accordions.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.owl-carousel').slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: '.container-slider .next',
+            nextArrow: '.container-slider .prev',
+            // nextArrow: "<img src='./image/rightbutton.png'>"
+        });
+
+
+        var accordions = document.getElementsByClassName("question");
+        for(var i = 0; i < accordions.length; i++) {
+            accordions[i].onclick = function() {
+                this.classList.toggle('is-open');
+            } 
+        }
+    });
+</script>
 
 </html>
