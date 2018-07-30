@@ -76,10 +76,10 @@
 }
 
 .container-slider{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 700px;
+    height: 700px;
+    width: 100%;
+    top: 64px;
+    position: relative;
   
 }
 
@@ -212,8 +212,8 @@
     width: 100%;
 }
 .owl-carousel {
-    width: 60%;
-    overflow: hidden;
+    width: 80%;
+    margin: 0px auto;
 }
 .owl-carousel .owl-item{
     height: 480px;

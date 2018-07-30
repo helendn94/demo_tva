@@ -48,14 +48,18 @@
                     <img src="./image/display3.png" />
                     <img src="./image/display4.png" />
                 </div>
-                <div class="controller_next">
+                <span class="next">
+                    <img src="image/leftbutton.png" /> </span>
+                <span class="prev">
+                    <img src="image/rightbutton.png" /> </span>
+                <!-- <div class="controller_next">
                     <span class="next">
                         <img src="image/leftbutton.png" /> </span>
                 </div>
                 <div class="controller_prev">
                     <span class="prev">
                         <img src="image/rightbutton.png" /> </span>
-                </div>
+                    </div> -->
             </div>
             <hr class="container-hr" />
             <div class="container-spin">
@@ -86,26 +90,29 @@
                     <div class="question">
                         <button class="accordion">Tôi có thể chơi game này bằng cách nào?</button>
                         <div class="accordion-content">
-                            <p>Bạn có thể chơi Trivia Play ngay lập tức bằng cách nhấn vào biểu tượng Trò chơi trên ứng dụng Messenger của Facebook. Biểu tượng trông giống như bộ điều khiển trò chơi và nằm gần khung nhập tin nhắn. Một danh sách các trò chơi sẽ hiện ra, bạn chỉ cần chọn Trivia Play và bắt đầu chơi! 
-                                    Trivia Play hiện đã có sẵn trên Facebook và ứng dụng Messenger cho iOS và Android. Ngoài ra, bạn còn có thể chơi game thông qua Messenger.com trên trình duyệt máy tính.
-                                    Hoặc đơn giản hơn, chơi game ngay bằng cách click vào nút bên dưới.</p>
+                            <p>Bạn có thể chơi Trivia Play ngay lập tức bằng cách nhấn vào biểu tượng Trò chơi trên ứng dụng
+                                Messenger của Facebook. Biểu tượng trông giống như bộ điều khiển trò chơi và nằm gần khung
+                                nhập tin nhắn. Một danh sách các trò chơi sẽ hiện ra, bạn chỉ cần chọn Trivia Play và bắt
+                                đầu chơi! Trivia Play hiện đã có sẵn trên Facebook và ứng dụng Messenger cho iOS và Android.
+                                Ngoài ra, bạn còn có thể chơi game thông qua Messenger.com trên trình duyệt máy tính. Hoặc
+                                đơn giản hơn, chơi game ngay bằng cách click vào nút bên dưới.</p>
                         </div>
                     </div>
 
                     <div class="question">
                         <button class="accordion">accordion #1</button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
                     <div class="question">
                         <button class="accordion">accordion #1</button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
                     <!-- <div class="question-user">
@@ -168,6 +175,8 @@
             lazyLoad: 'ondemand',
             slidesToShow: 4,
             slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
             prevArrow: '.container-slider .next',
             nextArrow: '.container-slider .prev',
             // nextArrow: "<img src='./image/rightbutton.png'>"
@@ -175,10 +184,10 @@
 
 
         var accordions = document.getElementsByClassName("question");
-        for(var i = 0; i < accordions.length; i++) {
-            accordions[i].onclick = function() {
+        for (var i = 0; i < accordions.length; i++) {
+            accordions[i].onclick = function () {
                 this.classList.toggle('is-open');
-            } 
+            }
         }
     });
 </script>
